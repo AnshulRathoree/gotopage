@@ -1,0 +1,237 @@
+
+.home-page {
+    background: linear-gradient(135deg, #1E1E1E, #121212);
+    color: #FFFFFF;
+    padding: 2rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+
+  .skills-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #121212, #1E1E1E);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+  
+
+  .about-me {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .about-me.visible {
+    opacity: 1;
+    transform: translateY(0.5);
+  }
+  
+ 
+  .skills-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    background: #282828;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px;
+    transform: translateY(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+  }
+
+
+.about-me.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-me-card {
+    padding: 3rem;
+    border-radius: 24px;
+    width: 80%;
+
+    min-width: 95vw;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: Svh;
+    text-align: center;
+    
+}
+
+.about-me-card h2 {
+    font-size: 2.5rem;
+    color: #00FFFF;
+    margin-top: 1rem;
+}
+
+.about-me-card p {
+    color: #C0C0C0;
+    margin: 2rem 0;
+}
+
+.about-me-card .button {
+    background: linear-gradient(135deg, #00FFFF, #8A2BE2);
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    align-self: center;
+    width: 80%;
+    max-width: 200px;
+}
+
+.about-me-card .button:hover {
+    background: linear-gradient(135deg, #8A2BE2, #00FFFF);
+    transform: scale(1.1);
+}
+
+.about-me {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-bottom: 3rem;
+}
+
+.about-me.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-me-card {
+    padding: 3rem;
+    border-radius: 24px;
+    width: 80%;
+    min-width: 100; 
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+.about-me-card h2 {
+    font-size: 2.5rem;
+    color: #00FFFF;
+    margin-top: 4rem;
+
+}
+
+.about-me-card p {
+    color: #C0C0C0;
+    margin: 2rem 0;
+}
+
+.about-me-card .button {
+    background: linear-gradient(135deg, #00FFFF, #8A2BE2);
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    align-self: center;
+    width: 80%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.about-me-card .button:hover {
+    background: linear-gradient(135deg, #8A2BE2, #00FFFF);
+    transform: scale(1.1);
+}
+.skills-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #121212, #1E1E1E);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .about-me.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skills-section.fade-out {
+    opacity: 0;
+  }
+  
+  .skills-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #121212, #1E1E1E);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }

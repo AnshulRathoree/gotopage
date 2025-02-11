@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "Senior Developer",
+      "message": "Working with [Your Name] was a great experience. Their attention to detail is unmatched!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "role": "Product Manager",
+      "message": "[Your Name] delivered a stunning website that exceeded our expectations."
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "role": "UX Designer",
+      "message": "Their futuristic designs are truly innovative and user-friendly."
+    }
+  ]

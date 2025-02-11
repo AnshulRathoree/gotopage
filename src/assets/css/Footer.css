@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin-top: auto;
+   
+  }
+  
+  .text {
+    margin-bottom: 1rem;
+    color: #C0C0C0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon {
+    color: #00FFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #FF4500;
+  }

@@ -1,0 +1,297 @@
+
+html {
+  scroll-behavior: smooth;
+}
+.projects-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #121212, #1E1E1E);
+  min-height: 100vh;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+}
+  
+
+  .page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #00FFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 3s ease-in-out infinite;
+    position: relative;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+    }
+    50% {
+      text-shadow: 0 0 15px #8A2BE2, 0 0 30px #8A2BE2;
+    }
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 2rem 0;
+    position: relative;
+  }
+  
+
+  .projects-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.05), transparent 80%);
+    pointer-events: none;
+    animation: particleFloat 12s linear infinite;
+  }
+  
+  @keyframes particleFloat {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+
+  .projects-grid .project-card {
+    transform: scale(0.9);
+    opacity: 0;
+    animation: fadeInProject 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  
+  @keyframes fadeInProject {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02) rotate(1deg);
+    transition: transform 0.5s;
+  }
+  
+
+  .mouse-trail {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #00FFFF;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: glowMouseTrail 1.5s infinite;
+  }
+  
+  @keyframes glowMouseTrail {
+    0% {
+      box-shadow: 0 0 5px #00FFFF, 0 0 15px #00FFFF;
+    }
+    100% {
+      box-shadow: 0 0 10px #8A2BE2, 0 0 30px #8A2BE2;
+    }
+  }
+
+  .video-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    overflow: hidden;
+  }
+  
+  .scroll-video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+    animation: videoFadeIn 1.5s ease-in-out forwards;
+  }
+
+
+@keyframes videoFadeIn {
+  0% {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.animated-video {
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.video-section:hover .animated-video {
+  transform: scale(1.05) rotate(1deg);
+}
+.video-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.scroll-video {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.video-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.scroll-video {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-video {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .scroll-video {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-section {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+      }
+}
+.video-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  perspective: 1000px;
+}
+
+.scroll-video {
+  width: 80%;
+  height: 85.5%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transform: scale(0.9) translateY(50px);
+  opacity: 0;
+  z-index: 1;
+  animation: videoInit 1s ease-in-out forwards;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.6s ease;
+}
+
+/* Initial video load animation */
+@keyframes videoInit {
+  0% {
+    transform: translateY(50px) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframe for seamless fade/zoom on scroll */
+@keyframes smoothScrollZoom {
+  0% {
+    transform: translateY(100px) scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.video-section.active .scroll-video {
+  animation: smoothScrollZoom 1.5s ease-in-out forwards;
+  z-index: 2;
+}
+
+.video-section.inactive .scroll-video {
+  opacity: 0;
+  transform: scale(0.9);
+  z-index: 0;
+}
+
+/* Hover Effect on Video */
+.video-section:hover .scroll-video {
+  transform: scale(1.05) rotate(0.5deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+}
+
