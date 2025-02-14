@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
-    <Router>
+    <Router  basename="/gotopage">
       <ScrollToTop/>
       <div className="app">
       
@@ -18,11 +18,12 @@ const App = () => {
 
       
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
+        
         </Routes>
 
        

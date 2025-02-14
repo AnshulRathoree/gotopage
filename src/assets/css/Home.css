@@ -1,237 +1,185 @@
 
-.home-page {
-    background: linear-gradient(135deg, #1E1E1E, #121212);
-    color: #FFFFFF;
-    padding: 2rem;
-    min-height: 100vh;
-    overflow-x: hidden;
-    position: relative;
-  }
-  
-
-  .skills-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #121212, #1E1E1E);
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
+:root {
+  --primary-bg: #181818;
+  --secondary-bg: linear-gradient(120deg, #181818, #0e0e0e);
+  --text-color: #f5f5f5;
+  --subtitle-color: #c0c0c0;
+  --accent-color: #007bff;
+  --shadow-color: rgba(0, 0, 0, 0.6);
 }
-  
 
-  .about-me {
-    text-align: center;
-    margin: 3rem auto;
-    padding: 3rem;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    position: relative;
-    z-index: 2; 
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  background: var(--primary-bg);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+/* Home Page */
+.home-page {
+  padding: 2rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+.content {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--subtitle-color);
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 0.7s ease forwards;
+  margin-right: 0.25rem;
+}
+
+.word:last-child {
+  margin-right: 0;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(15px);
   }
-  
-  .about-me.visible {
-    opacity: 1;
-    transform: translateY(0.5);
-  }
-  
- 
-  .skills-cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .skill-card {
-    background: #282828;
-    color: #FFFFFF;
-    padding: 1.5rem;
-    border-radius: 20px; /* More rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 250px;
-    transform: translateY(10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
-  }
-
-
-.about-me.visible {
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
 }
 
-.about-me-card {
-    padding: 3rem;
-    border-radius: 24px;
-    width: 80%;
-
-    min-width: 95vw;
-    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: Svh;
-    text-align: center;
-    
+/* Skills Section */
+.skills-section {
+  text-align: center;
+ 
+  margin: 4rem auto;
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  min-height: 50vh;
+ min-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-me-card h2 {
-    font-size: 2.5rem;
-    color: #00FFFF;
-    margin-top: 1rem;
+.skills-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+padding-bottom: 50px;
+  margin-top: 2rem;
 }
 
-.about-me-card p {
-    color: #C0C0C0;
-    margin: 2rem 0;
+.skill-card {
+  background: var(--primary-bg);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  text-align: center;
+  width: 200px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-me-card .button {
-    background: linear-gradient(135deg, #00FFFF, #8A2BE2);
-    color: #FFFFFF;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    align-self: center;
-    width: 80%;
-    max-width: 200px;
-}
-
-.about-me-card .button:hover {
-    background: linear-gradient(135deg, #8A2BE2, #00FFFF);
-    transform: scale(1.1);
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px var(--shadow-color);
 }
 
 .about-me {
-    text-align: center;
-    margin: 3rem auto;
-    padding: 3rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    position: relative;
-    z-index: 2;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    margin-bottom: 3rem;
-}
-
-.about-me.visible {
-    opacity: 1;
-    transform: translateY(0);
+  text-align: center;
+  margin: 4rem auto;
+  padding: 4rem;
+  border-radius: 12px;
+  background: var(--secondary-bg);
+  box-shadow: 0 8px 16px var(--shadow-color);
+  min-height: 50vh;
+  min-width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-me-card {
-    padding: 3rem;
-    border-radius: 24px;
-    width: 80%;
-    min-width: 100; 
-    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    
+  padding: 2rem;
+
+  width: 80%;
+
+  text-align: center;
 }
 
 .about-me-card h2 {
-    font-size: 2.5rem;
-    color: #00FFFF;
-    margin-top: 4rem;
-
+  font-size: 2rem;
+  color: var(--accent-color);
 }
 
 .about-me-card p {
-    color: #C0C0C0;
-    margin: 2rem 0;
+  color: var(--subtitle-color);
+  margin: 1.5rem 0;
+  line-height: 1.6;
 }
 
-.about-me-card .button {
-    background: linear-gradient(135deg, #00FFFF, #8A2BE2);
-    color: #FFFFFF;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    align-self: center;
-    width: 80%;
-    max-width: 200px;
-    margin-bottom: 30px;
+.button {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #2b2b2b, #444);
+  color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.about-me-card .button:hover {
-    background: linear-gradient(135deg, #8A2BE2, #00FFFF);
-    transform: scale(1.1);
+.button:hover {
+  background: linear-gradient(135deg, #3a3a3a, #555);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
 }
-.skills-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #121212, #1E1E1E);
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-    display: flex;
+
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1.5rem;
+  }
+
+  
+  .skills-section,
+  .about-me {
+    padding: 3rem 1.5rem;
+    width: 100%; 
+    min-width: unset;
+  }
+
+  .skills-cards {
     flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-    transition: opacity 0.6s ease-in-out;
+    align-items: center;
   }
-  
-  .about-me.visible {
-    opacity: 1;
-    transform: translateY(0);
+  .skill-card {
+    width: 90%;
+  } 
+  .about-me-card {
+    width: 100%;
+    padding: 1.5rem;
   }
-  
-  .skills-section.fade-out {
-    opacity: 0;
-  }
-  
-  .skills-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #121212, #1E1E1E);
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
+}
