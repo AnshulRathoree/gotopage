@@ -39,7 +39,7 @@ const About = () => {
           <p className="section-description">
           I’m <strong>ANSHUL</strong>, a passionate Front-end Developer based in <strong>Karnal, Haryana</strong>.
           I specialize in modern web technologies like <strong>React.js, JavaScript, CSS,</strong> and <strong>Figma</strong>.
-          I’m always eager to learn and push my boundaries to create unique web experiences.
+          I always eager to learn and push my boundaries to create unique web experiences.
           </p>
         </div>
       </section>
