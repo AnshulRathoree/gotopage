@@ -1,6 +1,7 @@
 # 🚀 **Anshul's Portfolio**  
 
 Welcome to my personal portfolio website! This is where I showcase my projects, skills, and a bit about myself.  
+[Visit Website](https://anshulRathoree.github.io/gotopage)
 
 ## 🌟 **Features**
 - **Smooth Animations** ✨  
@@ -37,6 +38,7 @@ Welcome to my personal portfolio website! This is where I showcase my projects, 
 - [ ] Enhance accessibility 🏗  
 
 ## 📬 **Connect with Me**
-[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white&style=flat-square)](https://github.com/AnshulRathoree)  
+[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white&style=flat-square)](https://github.com/AnshulRathoree)
+<br/>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/anshul-rathore-082960345/)  
 
